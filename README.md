@@ -1,6 +1,6 @@
 # salus-r2c
 
-This is a custom integration of r2c analyzers into coinbase/salus
+This is a custom integration of r2c analyzers into [coinbase/salus](https://github.com/coinbase/salus)
 
 ## Running
 
