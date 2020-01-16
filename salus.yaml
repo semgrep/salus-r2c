@@ -1,0 +1,26 @@
+---
+project_name: "salus-r2c"
+
+enforced_scanners:
+  - Sgrep
+
+active_scanners:
+  - Sgrep
+
+# Defines configuration relevant to specific scanners.
+scanner_configs:
+  Sgrep:
+    matches:
+      - pattern: "$X == $X"
+        message: "useless comparison"
+        forbidden: true
+      - pattern: "ssl.get_ciphers()"
+        message: "this function is only available on Python 3.6+"
+        forbidden: true
+      - pattern: "subprocess.Popen(errors=$X, ...)"
+        message: "the `errors` argument to Popen is only available on Python 3.6+"
+        forbidden: true
+      - pattern: "math.remainder($X, $Y)"
+        message: "this function is only available on Python 3.7+"
+        forbidden: true
+
