@@ -10,7 +10,7 @@ docker run --rm -t -v $(pwd):/home/repo returntocorp/salus-r2c
 
 ## Analyzers
 
-- [sgrep](https://sgrep.dev) A semantic AST pattern matcher powered by patterns written in the native code syntax. Polyglot with a universal AST. Contact r2c to vote for favorite language to be prioritzed.
+- [sgrep](https://sgrep.dev) A semantic AST pattern matcher powered by patterns written in the native code syntax. Polyglot with a universal AST. Contact r2c to vote for your favorite language to be prioritzed.
 
 ## Support
 
